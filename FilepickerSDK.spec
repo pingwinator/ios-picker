@@ -10,7 +10,6 @@ Pod::Spec.new do |s|
 
   s.source       = {
     :git => 'https://github.com/pingwinator/ios-picker.git',
-    :tag => 'v2.4.2'
   }
 
   s.platform     = :ios
