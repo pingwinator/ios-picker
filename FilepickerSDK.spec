@@ -9,18 +9,17 @@ Pod::Spec.new do |s|
   s.author       = { "Liyan Chang" => "liyan@filepicker.io" }
 
   s.source       = {
-    :git => 'https://github.com/Filepicker/ios.git',
+    :git => 'https://github.com/pingwinator/ios-picker.git',
     :tag => 'v2.4.2'
   }
 
   s.platform     = :ios
 
-  s.source_files = 'library/FPPicker.framework/Versions/A/Headers/*.h'
-  s.preserve_paths = 'library/FPPicker.framework'
-  s.frameworks   = 'AssetsLibrary', 'QuartzCore', 'CoreGraphics', 'MobileCoreServices', 'Foundation', 'CoreFoundation', 'FPPicker'
+  s.source_files = 'FPPicker/*.{h,m}'
+  s.frameworks   = 'AssetsLibrary', 'QuartzCore', 'CoreGraphics', 'MobileCoreServices', 'Foundation', 'CoreFoundation'
   s.xcconfig     = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/FilepickerSDK/library"' }
 
   s.requires_arc = true
 
-  s.resource = "library/FPPicker.bundle"
+  s.resource = "dist/FPPicker.bundle"
 end
