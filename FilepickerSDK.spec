@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "FilepickerSDK"
-  s.version      = "2.6.2"
+  s.version      = "2.6.3"
   s.summary      = "FPPicker.framework is the Filepicker.io iOS famework."
   s.homepage     = "https://developers.filepicker.io/docs/ios/"
   s.screenshots  = "https://github.com/Filepicker/ios/raw/master/Documenation%20Files/filepicker_ios.png"
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.source_files = 'FPPicker/*.{h,m}'
   s.frameworks   = 'AssetsLibrary', 'QuartzCore', 'CoreGraphics', 'MobileCoreServices', 'Foundation', 'CoreFoundation'
   
-  s.requires_arc = true
+  s.requires_arc = false
 
   s.resource = "dist/FPPicker.bundle"
 end
