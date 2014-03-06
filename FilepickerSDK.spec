@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "FilepickerSDK"
-  s.version      = "2.4.2"
+  s.version      = "2.6.1"
   s.summary      = "FPPicker.framework is the Filepicker.io iOS famework."
   s.homepage     = "https://developers.filepicker.io/docs/ios/"
   s.screenshots  = "https://github.com/Filepicker/ios/raw/master/Documenation%20Files/filepicker_ios.png"
