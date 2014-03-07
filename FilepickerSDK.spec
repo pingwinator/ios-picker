@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios
 
-  s.source_files = 'FPPicker/*.{h,m}'.exclude(/nonarc/)
+  s.source_files = FileList['FPPicker/*.{h,m}'].exclude(/nonarc/)
   s.frameworks   = 'AssetsLibrary', 'QuartzCore', 'CoreGraphics', 'MobileCoreServices', 'Foundation', 'CoreFoundation'
   
   s.requires_arc = true
