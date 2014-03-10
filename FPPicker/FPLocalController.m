@@ -425,7 +425,7 @@ UIImage *selectOverlay;
                  progress:(void (^)(float progress))progress
 {
     ALAssetRepresentation *representation = [asset defaultRepresentation];
-    UIImage* image = [UIImage imageWithCGImage:[representation fullResolutionImage]
+    UIImage* image = [UIImage imageWithCGImage:[representation fullScreenImage]
                                         scale:[representation scale] orientation:(UIImageOrientation)[representation orientation]];
         
     NSLog(@"uti: %@", [representation UTI]);

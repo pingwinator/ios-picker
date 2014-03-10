@@ -335,13 +335,13 @@
     } else if ([mimetype isEqualToString:@"image/png"]){
         NSLog(@"using png");
 
-        UIImage* image = [UIImage imageWithCGImage:[representation fullResolutionImage] 
+        UIImage* image = [UIImage imageWithCGImage:[representation fullScreenImage]
                                              scale:[representation scale] orientation:(UIImageOrientation)[representation orientation]];
         
         filedata = UIImagePNGRepresentation(image);
     } else {
         NSLog(@"using jpeg");
-        UIImage* image = [UIImage imageWithCGImage:[representation fullResolutionImage] 
+        UIImage* image = [UIImage imageWithCGImage:[representation fullScreenImage]
                                              scale:[representation scale] orientation:(UIImageOrientation)[representation orientation]];
         
         filedata = UIImageJPEGRepresentation(image, 0.6);
