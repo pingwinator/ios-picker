@@ -57,8 +57,8 @@ NSAssert([NSThread isMainThread], @"You aren't running in the UI thread!")
 #define fpCellIdentifier            @"Filepicker_Cell"
 
 
-#define fpLocalThumbSize            75
-#define fpRemoteThumbSize           100
+#define fpLocalThumbSize            150
+#define fpRemoteThumbSize           150
 
 
 #define fpMaxChunkSize              262144 //.25mb
